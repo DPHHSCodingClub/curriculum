@@ -3,16 +3,38 @@ html {
   width: 100%;
 }
 
-.container>div {
-  display: inline-block;
-  /* For IE7 */
-  zoom: 1;
-  /* Trigger hasLayout */
-  width: 32%;
-  text-align: center;
+body {
+  margin: 0px; /* want nav bar flush */
 }
 
-.button {
+div#lesson {
+  margin: 8px;
+}
+
+nav {
+  display: inline-block;
+  /* For IE7 */
+  /*zoom: 1;*/
+  /* Trigger hasLayout */
+  /*width: 32%;*/
+  text-align: center;
+  width: 100%;
+  background-color: #ffc627;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+button {
+  padding: 4px 32px;
+  width: 150px;
+  height: 50px;
+  font-size: 16px;
+  text-align: center;
+  background-color: #efefef;
+}
+
+button:disabled {
+  background-color: #efefef;
   padding: 4px 32px;
   width: 150px;
   height: 50px;
