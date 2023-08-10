@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Make a Recipe (HTML/CSS)</title>
+  <link href="../style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <nav class="lesson">
+    <button disabled>Previous Lesson</button>
+    <button onclick="window.location.href='../index.html';">Home Page</button>
+    <!--<button onclick="window.location.href='2_sprite_chase.html';">Next Lesson</button>-->
+    <button disabled>Next Lesson</button>
+  </nav>
+
+  <div id="main">
+
+  <h1>Make a Recipe (HTML/CSS)</h1>
+
+  <p>HTML, CSS, JavaScript are coding languages used to create the websites and
+  apps that you use every day.  In this lab, we'll learn what HTML is and how
+  to use it.  You don't need to have any previous knowledge!</p>
+
+  <ol id="lesson">
+    <li>
+      <p>
+      What is the "web"?
+      <a href="https://www.khanacademy.org/computing/computer-programming/html-css/intro-to-html/v/making-webpages-intro">Click here</a>
+      to watch a short video about the web and HTML.
+      </p>
+    <li>
+      <div class="forYouToDo">
+        <p>
+        Below is the code for a very simple HTML website.
+        The code is made of <strong>tags</strong> (things in angle-brackets,
+        <code>&lt;...&gt;</code>) that mark up your webpage
+        contents.  There's usually a <strong>head</strong> and a
+        <strong>body</strong>.  Many HTML tags come in pairs, called
+        <strong>opening</strong> and <strong>closing</strong> tags.
+        <a href="https://www.khanacademy.org/computing/computer-programming/html-css/intro-to-html/pt/html-basics">Click here</a>
+        to watch a short video explanation.
+        </p>
+        <pre style='background:lightgray; width:auto; display:inline-block; padding:1em; margin-left:24px;'><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;title&gt;My Cool Webpage&lt;/title&gt;
+  &lt;/head&gt;
+
+  &lt;body&gt;
+    &lt;p&gt;Hello world!&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+      </div>
+    <li>
+      <p>
+      Now, you'll make your own website.
+      Create a <a href="https://replit.com/">Replit</a> account.
+      </p>
+    <li>
+      <p>
+      Visit <a href="http://bit.ly/MakeARecipe">bit.ly/MakeARecipe</a> to open
+      a starter project.
+      Press the blue "Fork" button to make your own copy.
+      </p>
+    <li>
+      <p>
+      Think of a recipe that you want to share with others.
+      Let's make a webpage out of it!
+      Open the <code>index.html</code> file on your repl.it project.
+      We will use five main kinds of HTML tags, shown below.
+      <!--
+      <code>&lt;p&gt;</code>,
+      <code>&lt;h1&gt;</code>,
+      <code>&lt;img&gt;</code>,
+      <code>&lt;ul&gt;</code>, and
+      <code>&lt;ol&gt;</code>.
+      These mark paragraphs, headers (h1 to h6), images, unordered lists, and
+      ordered lists.
+      Inside the <code>&lt;ul&gt;</code> and <code>&lt;ol&gt;</code> tags,
+      we will also use the <code>&lt;li&gt;</code> tag to mark each list item.
+      -->
+      </p>
+      <img src="media/recipe1.png" style="width:600px; margin-left:50px">
+      <img src="media/recipe2.png" style="width:285px">
+      <p>
+      When you're done, the webpage should look similar to the below image.
+      </p>
+      <img src="media/recipe3.png" style="width:500px; margin:10px 50px">
+    <li>
+      <div class="forYouToDo">
+      <p>All the information is there, but it's a bit plain.  Let's spice it
+      up!  Open the <code>style.css</code> file on your repl.it project.
+      Add the code:
+      </p>
+        <pre style='background:lightgray; width:auto; display:inline-block; padding:1em; margin-left:24px;'><code>body {
+  color: lightgreen;
+}</code></pre>
+      <p>
+      What happened?  Your website browser (Chrome, Safari) looks for all HTML
+      <code>body</code> tags and colored them light green!
+      Notice that HTML and CSS are two different languages, so we're using
+      curly braces { and } instead of brackets &lt; and &gt;.<br><br>
+      Pick and choose pieces of the below CSS code to add more style to your website.
+      You can find some more CSS styling tips and explanations by <a href="https://projects.raspberrypi.org/en/projects/recipe/9">clicking here</a>.
+      </p>
+      </div>
+      <img src="media/recipe4.png" style="width:600px; margin:10px 50px">
+    <li>
+      <p>When you're done, your website might look like the below example.
+      Congratulations, you've made your first website!</p>
+      <img src="media/recipe5.png" style="width:500px; margin:10px 50px">
+  </ol>
+
+  <p>Credits: this lesson was adapted from
+  <a href="https://docs.replit.com/teaching-curriculum/intro-html-css">Toni Scullion's lesson plan</a>,
+  in turn adapted from a
+  <a href="https://projects.raspberrypi.org/en/projects/recipe/">Raspberry Pi Foundation project</a>.
+  </p>
+
+  </div>
+
+  <nav class="lesson">
+    <button disabled>Previous Lesson</button>
+    <button onclick="window.location.href='../index.html';">Home Page</button>
+    <!--<button onclick="window.location.href='2_sprite_chase.html';">Next Lesson</button>-->
+    <button disabled>Next Lesson</button>
+  </nav>
+
+</body>
+
+</html>
