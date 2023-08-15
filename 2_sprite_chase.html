@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>replit</title>
+  <title>Sprite Chase</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
@@ -12,39 +12,134 @@
   <nav class="lesson">
     <button onclick="window.location.href='1_click_alonzo.html';">Previous Lesson</button>
     <button onclick="window.location.href='index.html';">Home Page</button>
-    <button onclick="window.location.href='2_sprite_chase.html';">Next Lesson</button>
+    <button onclick="window.location.href='3_sprite_drawing.html';">Next Lesson</button>
   </nav>
 
   <div id="main">
     <h1>Sprite Chase</h1>
 
-    <p>In this lab, you will program two sprites. One sprite will follow your mouse. The other sprite will chase the
-      first.</p>
+    <p>In this lab, you will program <em>two</em> sprites. One sprite will
+    follow your mouse. The other sprite will chase the first.</p>
     <p>When they meet, they will have a short conversation.</p>
+    <img src="2_sprite_chase_images/demo.gif" style="width:300px;
+                                             margin-left:auto; margin-right:auto; display:block">
 
+    <p>Let's get started!</p>
+
+    <!-- begin main lesson sequence -->
     <ol id="lesson">
       <li>
         <p>
           <a href="https://snap.berkeley.edu/snap/snap.html#present:Username=dphhscodingclub&ProjectName=sprite_chase_Starter_sp2022&editMode&noRun"
             target=”_blank”>Click here</a> to load a starter project.
         </p>
-      </li>
+
+      <li>
+        <p>Build this script.  The <strong>mouse x</strong> and
+        <strong>mouse y</strong> blocks are in the blue "Sensing" menu.
+        </p>
+        <img src="2_sprite_chase_images/gotoxy.png">
+
+      <li>
+        <p>Run your script. Move your mouse around the stage. What happens?</p>
+
+      <li>
+        <p>Stop your script by clicking the red stop sign: <img src="2_sprite_chase_images/stop.png" style="vertical-align:middle;"></p>
+
+      <li>
+        <p>Create a new springe by clicking <img src="2_sprite_chase_images/new-sprite.png" style="vertical-align:middle;"> below
+        the stage.</p>
+
+      <li>
+        <p>Make the new Sprite(2) point towards Sprite using the <strong>point
+          towards</strong> block.  The video below shows how.
+        </p>
+        <img src="2_sprite_chase_images/new-sprite-part1.gif" style="width:600px">
+
+      <li>
+        <p>Change your script for Sprite(2) so that once the green flag is
+        clicked, Sprite(2) will point towards Sprite <em>forever</em>.
+        The video below shows how.
+        </p>
+        <img src="2_sprite_chase_images/new-sprite-part2.gif" style="width:600px">
+
+      <li>
+        <div class="forYouToDo">
+        Click the green flag <img src="2_sprite_chase_images/green-flag.png">
+        and check that your script does what you intended:
+        <ul>
+          <li>Sprite always follows your mouse.
+          <li>Sprite(2) stays in one place, but always points towards Sprite.
+        </ul>
+        </div>
+
+      <li>
+        <p>Change Sprite(2)'s code to point towards Sprite only until it is
+        touching Sprite.
+        The video below shows how.
+        </p>
+        <img src="2_sprite_chase_images/new-sprite-part3.gif" style="width:600px">
+
+      <li>
+        <p>Do the same for Sprite.  Change its code to follow your mouse only
+        until it is touching Sprite(2).
+        </p>
+
+      <li>
+        <div class="forYouToDo">
+        Test your program to see if it does what you want:
+        <ul>
+          <li>When you click <img src="2_sprite_chase_images/green-flag.png">,
+          Sprite (the gray one) should follow your mouse and Sprite(2) should
+          keep turning to face Sprite.
+          <li>If you bring Sprite close enough to touch Sprite(2), both sprites
+          should stop moving.
+        </ul>
+        </div>
+
+      <li>
+        <p>Add a <strong>move</strong> block to Sprite(2)'s script, so that it
+        chases Sprite.  You probably want a very small number like 1.
+        </p>
+        <img src="2_sprite_chase_images/move-tiny.png">
+
+      <li>
+        <p>Test your program a few times.</p>
+
+      <li>
+        <p>Right now, when the sprites meet, they just stop. Make them have a
+        conversation when they stop. You can do that by adding code, like
+        below, to Sprite or Sprite(2). Make up your own conversation.
+        </p>
+        <img src="2_sprite_chase_images/convo.png">
+
+      <li>
+        <p>You can personalize this project in lots of ways. You can give the
+        sprites costumes, make a longer dialogue, act out a story, add a third
+        sprite, or even change the background on the stage.
+        </p>
+        <img src="2_sprite_chase_images/change-background.gif">
+
+
     </ol>
+    <!-- end main lesson sequence -->
+
+    <h2>Credits</h2>
+    <p>
+    Content adapted directly from:
+    <a href="https://bjc.edc.org/June2017/bjc-r/cur/programming/1-introduction/2-drawing-interaction/2-following-sprites.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc.html&novideo&noassignment">BJC (June 2017) U1L2 "Sprite Drawing and Interaction"</a>
+    and
+    <a href="https://bjc.edc.org/March2019/bjc-r/cur/programming/1-introduction/5-follow-the-leader/1-following-sprites.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc.html&novideo&noassignment">BJC (June 2019) U1L5 "Follow the Leader"</a>.
+    </p>
 
   </div>
 
   <nav class="lesson">
     <button onclick="window.location.href='1_click_alonzo.html';">Previous Lesson</button>
     <button onclick="window.location.href='index.html';">Home Page</button>
-    <button onclick="window.location.href='2_sprite_chase.html';">Next Lesson</button>
+    <button onclick="window.location.href='3_sprite_drawing.html';">Next Lesson</button>
   </nav>
 
-  <!--
-  This script places a badge on your repl's full-browser view back to your repl's cover
-  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
-  teal, blue, blurple, magenta, pink!
-  -->
-  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
 </body>
 
 </html>
