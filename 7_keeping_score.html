@@ -22,11 +22,11 @@
 
     <p>In order to keep track of the score, we can use <strong>variables</strong>, which allow us to store and modify a value. We can store all kinds of values using <strong>variables</strong>, such as numbers or even words.</p>
 
-    <p>In Snap!, user-created <strong>variables</strong> are colored <span style="color: #ff6200">orange</span>. In fact, if you've done the Row of Dollhouses project, you've already seen and used variables!</p>
+    <p>In Snap!, user-created <strong>variables</strong> are colored <code class="variables">orange</code>. In fact, if you've done the Row of Dollhouses project, you've already seen and used variables!</p>
     <img src="7_keeping_score_images/block-input.png" style="width:300px;
                                              margin-left:auto; margin-right:auto; display:block">
 
-    <p>When we modified our custom blocks to take an input called <span style="color: #ff6200">size</span>, that input was stored in a <strong>variable</strong> that we could reuse to draw houses of that same <span style="color: #ff6200">size</span>. Let's make our own <strong>variable</strong> to keep track of the score!</p>
+    <p>When we modified our custom blocks to take an input called <code class="variables">size</code>, that input was stored in a <strong>variable</strong> that we could reuse to draw houses of that same <code class="variables">size</code>. Let's make our own <strong>variable</strong> to keep track of the score!</p>
 
     <!-- begin main lesson sequence -->
     <ol id="lesson">
@@ -38,9 +38,9 @@
         </p>
 
       <li>
-        <p>Create a new variable called <span style="color: #ff6200">score</span>.</p>
+        <p>Create a new variable called <code class="variables">score</code>.</p>
         <img src="7_keeping_score_images/global-var.png">
-        <p>Notice when you added the <span style="color: #ff6200">score</span> variable, a counter appeared on the top left corner of the stage that shows the value stored in <span style="color: #ff6200">score</span>.</p>
+        <p>Notice when you added the <code class="variables">score</code> variable, a counter appeared on the top left corner of the stage that shows the value stored in <code class="variables">score</code>.</p>
         <img src="7_keeping_score_images/score.png">
 
       <li>
@@ -50,13 +50,13 @@
         <img src="7_keeping_score_images/change-score.png">
 
       <li>
-        <p>Add one block to your code so that when <img src="7_keeping_score_images/flag.png" style="height:20px; vertical-align:middle;"> is clicked at the beginning of the game, the <span style="color: #ff6200">score</span> is initialized to zero.</p>
+        <p>Add one block to your code so that when <img src="7_keeping_score_images/flag.png" style="height:20px; vertical-align:middle;"> is clicked at the beginning of the game, the <code class="variables">score</code> is initialized to zero.</p>
 
       <li>
-        <p>Make it so that so that when Alonzo is clicked, the <span style="color: #ff6200">score</span> increases by one.</p>
+        <p>Make it so that so that when Alonzo is clicked, the <code class="variables">score</code> increases by one.</p>
 
       <li>
-        <p>Make it so that when Alonzo moves without being clicked, the <span style="color: #ff6200">score</span> decreases by one.</p>
+        <p>Make it so that when Alonzo moves without being clicked, the <code class="variables">score</code> decreases by one.</p>
 
       <li>
         <div class="forYouToDo">
@@ -64,7 +64,7 @@
           <br><br>
           <img src="7_keeping_score_images/win-condition.png">
           <br><br>
-          Change the winning condition so that the game instead ends when the <span style="color: #ff6200">score</span> is equal to some number, like 5. When the player wins, we should reset the score back to zero.
+          Change the winning condition so that the game instead ends when the <code class="variables">score</code> is equal to some number, like 5. When the player wins, we should reset the score back to zero.
           <br><br>
           To use the "score" variable, drag its oval-shaped block from the
           left-side bar.  Try double clicking it -- what happens?
@@ -72,7 +72,7 @@
         <img src="7_keeping_score_images/drag-score.png">
 
       <li>
-        <p>Now let's add another <strong>variable</strong> called <span style="color: #ff6200">winning score</span>. Change your code so that the game ends when the <span style="color: #ff6200">score</span> is equal to the <span style="color: #ff6200">winning score</span></p>
+        <p>Now let's add another <strong>variable</strong> called <code class="variables">winning score</code>. Change your code so that the game ends when the <code class="variables">score</code> is equal to the <code class="variables">winning score</code></p>
 
       <li>
         <p>If the score becomes too negative, the game can become very hard or
@@ -81,12 +81,12 @@
 
       <li>
         <div class="forYouToDo">
-          (Optional) Right now, the ghost effect changes independently of the score. We should make it so that whenever the <span style="color: #ff6200">score</span> changes, we also set the ghost effect to be a number between 0 and 100 that depends on how close the <span style="color: #ff6200">score</span> is compared to the <span style="color: #ff6200">winning score</span>.
+          (Optional) Right now, the ghost effect changes independently of the score. We should make it so that whenever the <code class="variables">score</code> changes, we also set the ghost effect to be a number between 0 and 100 that depends on how close the <code class="variables">score</code> is compared to the <code class="variables">winning score</code>.
           <br><br>
           For example:
           <ul>
-            <li>If the <span style="color: #ff6200">winning score</span> is 2, then a <span style="color: #ff6200">score</span> of 0, 1, and 2 should set the ghost effect to 0, 50, and 100 respectively.
-            <li>If the <span style="color: #ff6200">winning score</span> is 5, then a <span style="color: #ff6200">score</span> of 1 should set the ghost effect to 20.
+            <li>If the <code class="variables">winning score</code> is 2, then a <code class="variables">score</code> of 0, 1, and 2 should set the ghost effect to 0, 50, and 100 respectively.
+            <li>If the <code class="variables">winning score</code> is 5, then a <code class="variables">score</code> of 1 should set the ghost effect to 20.
           </ul>
           <br>
           You should use some of these blocks:
@@ -97,7 +97,7 @@
         <div class="forYouToDo">
           (Optional) The <img src="7_keeping_score_images/ask.png" style="height:25px; vertical-align:middle;"> block will ask the player a question (which we can put in the blank space in the block), and then wait for the player to input an answer and press enter. Then, that answer will be stored in the <img src="7_keeping_score_images/answer.png" style="height:20px; vertical-align:middle;"> variable.
           <br><br>
-          <strong>Ask the player for a difficulty level when <img src="7_keeping_score_images/flag.png" style="height:20px; vertical-align:middle;"> is clicked at the beginning of the game, then set the <span style="color: #ff6200">winning score</span> equal to their <img src="7_keeping_score_images/answer.png" style="height:20px; vertical-align:middle;">.</strong>
+          <strong>Ask the player for a difficulty level when <img src="7_keeping_score_images/flag.png" style="height:20px; vertical-align:middle;"> is clicked at the beginning of the game, then set the <code class="variables">winning score</code> equal to their <img src="7_keeping_score_images/answer.png" style="height:20px; vertical-align:middle;">.</strong>
         </div>
 
     </ol>

@@ -85,3 +85,16 @@ ol#lesson>li>p, .forYouToDo {
     padding: 8px;
     background-color: #62c21322;
 }
+
+/* Inline text to be formatted as Snap! code */
+code {
+    font-weight: bold
+}
+code.motion { color: #3A53CA }
+code.looks { color: #7B39DD }
+code.sound { color: #BF53D3 }
+code.pen { color: #469F7B }
+code.control { color: #DDAA43 }
+code.sensing { color: #4192D6 }
+code.operators { color: #7AC03E }
+code.variables { color: #ff6200 }
