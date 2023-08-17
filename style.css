@@ -83,6 +83,7 @@ ol#lesson>li>p, .forYouToDo {
     border-width: 2px;
     border-left-width: 20px;
     padding: 8px;
+    margin: 16px 0px;
     background-color: #62c21322;
 }
 
