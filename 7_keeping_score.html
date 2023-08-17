@@ -18,114 +18,86 @@
   <div id="main">
     <h1>Keeping Score</h1>
 
-    <p>Let's make some art!  We'll see how computers can both realize and
-    stretch our imagination.</p>
+    <p>Let's upgrade our Click Alonzo game by tracking and displaying the player's score!</p>
+
+    <p>In order to keep track of the score, we can use <strong>variables</strong>, which allow us to store and modify a value. We can store all kinds of values using <strong>variables</strong>, such as numbers or even words.</p>
+
+    <p>In Snap!, <strong>variables</strong> are colored <span style="color: #ff6200">orange</span>. In fact, if you've done the Row of Dollhouses project, you've already seen and used variables!</p>
+    <img src="7_keeping_score_images/block-input.png" style="width:300px;
+                                             margin-left:auto; margin-right:auto; display:block">
+
+    <p>When we modified our custom blocks to take an input called <span style="color: #ff6200">size</span>, that input was stored in a <strong>variable</strong> that we could reuse to draw houses of that same <span style="color: #ff6200">size</span>. Let's make our own <strong>variable</strong> to keep track of the score!</p>
 
     <!-- begin main lesson sequence -->
     <ol id="lesson">
 
       <li>
         <p>
-          <a href="https://snap.berkeley.edu/snap/snap.html#present:Username=dphhscodingclub&ProjectName=sprite_drawing_Starter_sp2022&editMode&noRun"
-            target=”_blank”>Click here</a> to load a starter project.
+          Open your “Click Alonzo” project. If you don’t have it, use the <a href="https://snap.berkeley.edu/snap/snap.html#present:Username=dphhscodingclub&ProjectName=keeping_score_Starter_fa2023&editMode&noRun"
+            target=”_blank”>teachers’ solution</a>.
         </p>
 
       <li>
-        <p><strong>Predict: what do you think this code will do?</strong> Build
-        and run it. What happened?</p>
-        <img src="3_sprite_drawing_images/starter-script.png">
+        <p>Create a new variable called <span style="color: #ff6200">score</span>.</p>
+        <img src="7_keeping_score_images/global-var.png">
+        <p>Notice when you added the <span style="color: #ff6200">score</span> variable, a counter appeared on the top left corner of the stage that shows the value stored in <span style="color: #ff6200">score</span>.</p>
+        <img src="7_keeping_score_images/score.png">
 
       <li>
-        <p>Click
-        <img src="3_sprite_drawing_images/pen-down.png" style="height:25px; vertical-align:middle;">
-        , and then click your script to run it again.</p>
+        <p><strong>Predict: what do you think these blocks will do?</strong> Add them to your scripting area
+        and click on them. Try changing the numbers and clicking on them again. What happened?</p>
+        <img src="7_keeping_score_images/set-score.png">
+        <img src="7_keeping_score_images/change-score.png">
 
       <li>
-        <p>Change 100 to 50, like so:
-        <img src="3_sprite_drawing_images/move-50.png" style="height:25px; vertical-align:middle;">
-        , by clicking on the 100 and typing 50.
-        Click the script again to run it with the new input value.</p>
-
+        <p>Add one block to your code so that when <img src="7_keeping_score_images/flag.png" style="height:20px; vertical-align:middle;"> is clicked at the beginning of the game, the <span style="color: #ff6200">score</span> is initialized to zero.</p>
 
       <li>
-        <p>Click
-        <img src="3_sprite_drawing_images/clear.png" style="height:25px; vertical-align:middle;">
-        in the green "Pen" palette.</p>
+        <p>Make it so that so that when Alonzo is clicked, the <span style="color: #ff6200">score</span> increases by one.</p>
 
       <li>
-        <p>Change the number in
-        <img src="3_sprite_drawing_images/turn-right-90.png" style="height:25px; vertical-align:middle;">
-        and run the script again... and again...</p>
-
-      <li>
-        <p>Change the number in the
-        <img src="3_sprite_drawing_images/repeat-4.png" style="height:50px; vertical-align:middle;">
-        and run the script again... and again...</p>
-
-      <li>
-        <p><strong>Draw a triangle with equal-length sides.</strong></p>
-        <img src="3_sprite_drawing_images/red-triangle.png">
-
-      <li>
-        <p><strong>Draw a circle.</strong> If you <em>really</em> need a hint,
-        you can ask a teacher or mentor.</p>
-        <img src="3_sprite_drawing_images/circle.png">
-
-      <li>
-        <p>Here are some other blocks you can experiment with! To change the
-        pen's style, you must <em>click</em> the block to run it after you
-        changed the number or color.</p>
-        <img src="3_sprite_drawing_images/pen-size.png" style="margin:1em">
-        <img src="3_sprite_drawing_images/pen-color.png" style="margin:1em">
-        <img src="3_sprite_drawing_images/point-in-direction-90.png" style="margin:1em">
-
-      <li>
-        <p><strong>Let's make a more complex fractal design.</strong> Start by
-        building a script to draw a red triangle. You can reuse your script
-        from earlier.</p>
-        <img src="3_sprite_drawing_images/red-triangle.png">
+        <p>Make it so that when Alonzo moves without being clicked, the <span style="color: #ff6200">score</span> decreases by one.</p>
 
       <li>
         <div class="forYouToDo">
-        <strong>Duplicate</strong> your script and change it to draw a
-        smaller blue triangle. Below is a video showing how to duplicate a
-        script: right-click on the "repeat" block to open the drop-down menu.
-        <br><br>
-        <em>Right-click on Chromebooks and Macs: press or tap the touchpad with two fingers.<br>
-          Chromebooks: you can also press Alt, then click with one finger.<br>
-          Macs: you can also press Control (not Command!), then click with one finger.<br>
-        </em>
+          Right now, the game ends when the ghost effect is equal to 100:
+          <br><br>
+          <img src="7_keeping_score_images/win-condition.png">
+          <br><br>
+          Change the winning condition so that the game instead ends when the <span style="color: #ff6200">score</span> is equal to some number, like 5. When the player wins, we should reset the score back to zero.
         </div>
-        <img src="3_sprite_drawing_images/blue-triangle.png">
-        <br>
-        <img src="3_sprite_drawing_images/duplicate.gif">
 
       <li>
-        <p>Insert the entire script for the blue triangle between the move and
-        turn blocks of the red triangle.  The video below shows how.
-        </p>
-        <img src="3_sprite_drawing_images/nest-scripts.gif">
+        <p>Now let's add another <strong>variable</strong> called <span style="color: #ff6200">winning score</span>. Change your code so that the game ends when the <span style="color: #ff6200">score</span> is equal to the <span style="color: #ff6200">winning score</span></p>
 
       <li>
-        <p><strong>Predict: what will happen when you run this script?</strong>
-        Then, run it!</p>
+        <div class="forYouToDo">
+          (Optional) Right now, the ghost effect changes independently of the score. We should make it so that whenever the <span style="color: #ff6200">score</span> changes, we also set the ghost effect to be a number between 0 and 100 that depends on how close the <span style="color: #ff6200">score</span> is compared to the <span style="color: #ff6200">winning score</span>.
+          <br><br>
+          For example:
+          <ul>
+            <li>If the <span style="color: #ff6200">winning score</span> is 2, then a <span style="color: #ff6200">score</span> of 0, 1, and 2 should set the ghost effect to 0, 50, and 100 respectively.
+            <li>If the <span style="color: #ff6200">winning score</span> is 5, then a <span style="color: #ff6200">score</span> of 1 should set the ghost effect to 20.
+          </ul>
+          <br>
+          You should use some of these blocks:
+          <img src="7_keeping_score_images/operations.png">
+        </div>
 
       <li>
-        <p>Can you make the picture below?
-        If you want to go farther: try embedding one more triangle, half the
-        size of the last (green) one, in the same way.
-        </p>
-        <img src="3_sprite_drawing_images/three-color-sierpinski.png">
+        <div class="forYouToDo">
+          (Optional) The <img src="7_keeping_score_images/ask.png" style="height:25px; vertical-align:middle;"> block will ask the player a question (which we can put in the blank space in the block), and then wait for the player to input an answer and press enter. Then, that answer will be stored in the <img src="7_keeping_score_images/answer.png" style="height:20px; vertical-align:middle;"> variable.
+          <br><br>
+          <strong>Ask the player for a difficulty level when <img src="7_keeping_score_images/flag.png" style="height:20px; vertical-align:middle;"> is clicked at the beginning of the game, then set the <span style="color: #ff6200">winning score</span> equal to their <img src="7_keeping_score_images/answer.png" style="height:20px; vertical-align:middle;">.</strong>
+        </div>
 
     </ol>
     <!-- end main lesson sequence -->
 
     <h2>Credits</h2>
     <p>
-    Content adapted chiefly from pages 1 and 4 of
-    <a href="https://bjc.edc.org/June2017/bjc-r/cur/programming/1-introduction/2-drawing-interaction/1-exploring-snap-drawing-motion.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc.html&novideo&noassignment">BJC (June 2017) U1L2 "Sprite Drawing and Interaction"</a>
-    and also
-    <a href="https://bjc.edc.org/bjc-r/cur/programming/1-introduction/3-drawing/3-blocks-with-inputs.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc.html&novideo&noassignment">BJC U1L3 "Modern Art"</a>.
+    Content adapted chiefly from page 4 of
+    <a href="https://bjc.edc.org/June2017/bjc-r/cur/programming/1-introduction/2-drawing-interaction/1-exploring-snap-drawing-motion.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc.html&novideo&noassignment">BJC (June 2017) U2L1 "Keeping Score with Global Variables"
     </p>
 
   </div>
