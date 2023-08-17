@@ -18,121 +18,96 @@
   <div id="main">
     <h1>Row of Houses</h1>
 
-    <!--
-    <p>Let's make some art!  We'll see how computers can both realize and
-    stretch our imagination.</p>
-    -->
+    <p>So far, you've used only pre-made blocks. Now, you'll learn to build
+    your own blocks and use them to make other blocks.</p>
+
+    <p>You'll start by defining a <code class="motion">draw square</code> block. Then,
+    you'll define <code class="motion">draw triangle</code>, then <code class="motion">draw
+      house</code>, and finally <code class="motion">draw row of houses</code>.</p>
+
+    <p>Imagine: what else could you make with this ability?  A million ants?  A
+    computer-generated Manhattan skyline?</p>
 
     <!-- begin main lesson sequence -->
-    <!--
     <ol id="lesson">
 
       <li>
-        <p>
-          <a href="https://snap.berkeley.edu/snap/snap.html#present:Username=dphhscodingclub&ProjectName=sprite_drawing_Starter_sp2022&editMode&noRun"
-            target=”_blank”>Click here</a> to load a starter project.
-        </p>
-
-      <li>
-        <p><strong>Predict: what do you think this code will do?</strong> Build
-        and run it. What happened?</p>
-        <img src="3_sprite_drawing_images/starter-script.png">
-
-      <li>
-        <p>Click
-        <img src="3_sprite_drawing_images/pen-down.png" style="height:25px; vertical-align:middle;">
-        , and then click your script to run it again.</p>
-
-      <li>
-        <p>Change 100 to 50, like so:
-        <img src="3_sprite_drawing_images/move-50.png" style="height:25px; vertical-align:middle;">
-        , by clicking on the 100 and typing 50.
-        Click the script again to run it with the new input value.</p>
-
-
-      <li>
-        <p>Click
-        <img src="3_sprite_drawing_images/clear.png" style="height:25px; vertical-align:middle;">
-        in the green "Pen" palette.</p>
-
-      <li>
-        <p>Change the number in
-        <img src="3_sprite_drawing_images/turn-right-90.png" style="height:25px; vertical-align:middle;">
-        and run the script again... and again...</p>
-
-      <li>
-        <p>Change the number in the
-        <img src="3_sprite_drawing_images/repeat-4.png" style="height:50px; vertical-align:middle;">
-        and run the script again... and again...</p>
-
-      <li>
-        <p><strong>Draw a triangle with equal-length sides.</strong></p>
-        <img src="3_sprite_drawing_images/red-triangle.png">
-
-      <li>
-        <p><strong>Draw a circle.</strong> If you <em>really</em> need a hint,
-        you can ask a teacher or mentor.</p>
-        <img src="3_sprite_drawing_images/circle.png">
-
-      <li>
-        <p>Here are some other blocks you can experiment with! To change the
-        pen's style, you must <em>click</em> the block to run it after you
-        changed the number or color.</p>
-        <img src="3_sprite_drawing_images/pen-size.png" style="margin:1em">
-        <img src="3_sprite_drawing_images/pen-color.png" style="margin:1em">
-        <img src="3_sprite_drawing_images/point-in-direction-90.png" style="margin:1em">
-
-      <li>
-        <p><strong>Let's make a more complex fractal design.</strong> Start by
-        building a script to draw a red triangle. You can reuse your script
-        from earlier.</p>
-        <img src="3_sprite_drawing_images/red-triangle.png">
+        <p><a href="https://snap.berkeley.edu/snap/snap.html"
+            target=”_blank”>Click here</a> to open a new blank project.</p>
 
       <li>
         <div class="forYouToDo">
-        <strong>Duplicate</strong> your script and change it to draw a
-        smaller blue triangle. Below is a video showing how to duplicate a
-        script: right-click on the "repeat" block to open the drop-down menu.
+        Build the <code class="motion">draw square</code> block: right-click on the
+        gray background of the scripting area and choose "make a block...".
+        The video below shows how.
         <br><br>
         <em>Right-click on Chromebooks and Macs: press or tap the touchpad with two fingers.<br>
           Chromebooks: you can also press Alt, then click with one finger.<br>
           Macs: you can also press Control (not Command!), then click with one finger.<br>
         </em>
         </div>
-        <img src="3_sprite_drawing_images/blue-triangle.png">
+        <img src="4_row_of_houses_images/make-block.gif">
+
+      <li>
+        <div class="forYouToDo">
+        Every block needs a <strong>palette</strong> (shown by the color), a
+        <strong>title</strong>, a <strong>category</strong> (shown by the
+        shape of the block), and a <strong>script</strong> that defines its
+        behavior.
         <br>
-        <img src="3_sprite_drawing_images/duplicate.gif">
+        <br>
+        We recommend the following settings for your first custom block.
+        <ul>
+          <li><strong>Palette (color):</strong> <code class="motion">Motion</code> or <code class="pen">Pen</code>. But any is OK.
+          <li><strong>Title:</strong> “draw square”.
+          <li><strong>Category (shape):</strong> don’t change this, leave “Command” selected.
+          <li><strong>For all sprites:</strong> don’t change this, leave “For all sprites” selected.
+          <li><strong>Script:</strong> drag any block you want into the block editor.
+        </ul>
+        </div>
 
       <li>
-        <p>Insert the entire script for the blue triangle between the move and
-        turn blocks of the red triangle.  The video below shows how.
-        </p>
-        <img src="3_sprite_drawing_images/nest-scripts.gif">
+        <p>Finish building the block, like below. When you are done, click
+        “OK” or “Apply”.</p>
+        <img src="4_row_of_houses_images/draw-square.png">
 
       <li>
-        <p><strong>Predict: what will happen when you run this script?</strong>
-        Then, run it!</p>
+        <p>Test your <code class="motion">draw square</code> block.
+        Fix your code if necessary.  Remember you will need the
+        <code class="pen">pen down</code> block, like below.</p>
+        <img src="4_row_of_houses_images/main-script.png">
 
       <li>
-        <p>Can you make the picture below?
-        If you want to go farther: try embedding one more triangle, half the
-        size of the last (green) one, in the same way.
-        </p>
-        <img src="3_sprite_drawing_images/three-color-sierpinski.png">
+        <p>Create a <code class="motion">draw triangle</code>
+        block that draws an equilateral triangle with the same side length as
+        the square you just drew (50).</p>
+
+      <li>
+        <p>Create a <code class="motion">draw house</code> block that uses your
+        <code class="motion">draw square</code> and <code class="motion">draw
+        triangle</code> blocks together to draw a "house" shape. You might have
+        to do some work to get the two shapes to connect properly.</p>
+        <img src="4_row_of_houses_images/house.png">
+
+      <li>
+        <p>Build a <code class="motion">draw row of houses</code> block that
+        draws a row of attached houses, each new one to the right of the
+        previous, until you hit the right edge of the screen.  You may wish to
+        use the following blocks.</p>
+        <img src="4_row_of_houses_images/repeat-until.png">
+        <img src="4_row_of_houses_images/row-houses.png">
 
     </ol>
-    -->
     <!-- end main lesson sequence -->
 
     <h2>Credits</h2>
-    <!--
     <p>
-    Content adapted chiefly from pages 1 and 4 of
-    <a href="https://bjc.edc.org/June2017/bjc-r/cur/programming/1-introduction/2-drawing-interaction/1-exploring-snap-drawing-motion.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc.html&novideo&noassignment">BJC (June 2017) U1L2 "Sprite Drawing and Interaction"</a>
-    and also
-    <a href="https://bjc.edc.org/bjc-r/cur/programming/1-introduction/3-drawing/3-blocks-with-inputs.html?topic=nyc_bjc%2F1-intro-loops.topic&course=bjc4nyc.html&novideo&noassignment">BJC U1L3 "Modern Art"</a>.
+    Content adapted from
+    <a href="https://bjc.edc.org/June2017/bjc-r/cur/programming/1-introduction/3-building-blocks/1-custom-blocks.html">BJC (June 2017) U1L3</a>,
+    <a href="https://bjc.edc.org/bjc-r/cur/programming/1-introduction/optional-projects/2-row-of-houses.html">BJC U1 Optional Project 2</a>,
+    and
+    <a href="https://bjc.edc.org/bjc-r/cur/programming/1-introduction/2-gossip-and-greet/4-making-a-new-block.html">BJC U1L2 Gossip</a>.
     </p>
-    -->
 
   </div>
 
