@@ -1,0 +1,25 @@
+# -------------------------------------------
+# Exclusions from github.com/github/gitignore
+# -------------------------------------------
+
+# Mac OS - General
+.DS_Store
+.AppleDouble
+.LSOverride
+# Mac OS - Icon must end with two \r
+Icon
+# Mac OS - Thumbnails
+._*
+
+# Dropbox settings and caches
+.dropbox
+.dropbox.attr
+.dropbox.cache
+
+# Vim swap files etc.
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+*.un~
+Session.vim
+.netrwhist
+*~
