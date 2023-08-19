@@ -95,7 +95,7 @@ code.motion { color: #3A53CA }
 code.looks { color: #7B39DD }
 code.sound { color: #BF53D3 }
 code.pen { color: #469F7B }
-code.control { color: #DDAA43 }
+code.control, code.ctrl { color: #DDAA43 }
 code.sensing { color: #4192D6 }
-code.operators { color: #7AC03E }
-code.variables { color: #ff6200 }
+code.operators, code.operator, code.op { color: #7AC03E }
+code.variables, code.variable, code.var { color: #ff6200 }
