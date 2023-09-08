@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>Make a Recipe (HTML/CSS)</title>
+  <title>Make a Card</title>
   <link href="../style.css" rel="stylesheet" type="text/css" />
 </head>
 
@@ -17,19 +17,20 @@
 
   <div id="main">
 
-  <h1>Make a Card (HTML/CSS)</h1>
+  <h1>Make a Card (CSS ID/class, JavaScript)</h1>
 
-  <p>HTML, CSS, JavaScript are coding languages used to create the websites and
-  apps that you use every day.  In this lab, we'll learn what HTML is and how
-  to use it.  You don't need to have any previous knowledge!</p>
+  <p>In this lab, we'll use CSS selectors to apply style sparingly, to certain
+  elements that we request.
+  We'll also see how JavaScript can be used to make a website respond to a
+  user's actions.
+  Unlike HTML and CSS, which are used to organize and style your website
+  content, JavaScript is a programming language, like Snap! or Python.
+  JavaScript lets us manipulate HTML tags and CSS styling in a very flexible
+  way.
+  </p>
 
   <ol id="lesson">
-    <li>
-      <p>
-      What is the "web"?
-      <a href="https://www.khanacademy.org/computing/computer-programming/html-css/intro-to-html/v/making-webpages-intro">Click here</a>
-      to watch a short video about the web and HTML.
-      </p>
+    <!--
     <li>
       <div class="forYouToDo">
         <p>
@@ -42,82 +43,220 @@
         <a href="https://www.khanacademy.org/computing/computer-programming/html-css/intro-to-html/pt/html-basics">Click here</a>
         to watch a short video explanation.
         </p>
-        <pre style='background:lightgray; width:auto; display:inline-block; padding:1em; margin-left:24px;'><code>&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-    &lt;meta charset="utf-8"&gt;
-    &lt;title&gt;My Cool Webpage&lt;/title&gt;
-  &lt;/head&gt;
-
-  &lt;body&gt;
-    &lt;p&gt;Hello world!&lt;/p&gt;
-  &lt;/body&gt;
-&lt;/html&gt;</code></pre>
       </div>
+    -->
     <li>
       <p>
-      Now, you'll make your own website.
-      Create a <a href="https://replit.com/">Replit</a> account.
-      </p>
-    <li>
-      <p>
-      Visit <a href="http://bit.ly/MakeARecipe">bit.ly/MakeARecipe</a> to open
+      Visit <a href="https://replit.com/@atr6/MakeACard">replit.com/@atr6/MakeACard</a> to open
       a starter project.
-      Press the blue "Fork" button to make your own copy.
+      Click the "Fork" button to make your own copy.
+      <br><br>
+      It's a birthday card!  Test it out: click the button a few times.
       </p>
+      <img src="2_card_images/card.png" style="width:150px">
+
     <li>
       <p>
-      Think of a recipe that you want to share with others.
-      Let's make a webpage out of it!
-      Open the <code>index.html</code> file on your repl.it project.
-      We will use five main kinds of HTML tags, shown below.
-      <!--
-      <code>&lt;p&gt;</code>,
-      <code>&lt;h1&gt;</code>,
-      <code>&lt;img&gt;</code>,
-      <code>&lt;ul&gt;</code>, and
-      <code>&lt;ol&gt;</code>.
-      These mark paragraphs, headers (h1 to h6), images, unordered lists, and
-      ordered lists.
-      Inside the <code>&lt;ul&gt;</code> and <code>&lt;ol&gt;</code> tags,
-      we will also use the <code>&lt;li&gt;</code> tag to mark each list item.
-      -->
+      Open <code>index.html</code> and have a look.  The card uses three new
+      HTML tags:
+      <code>&lt;script&gt;</code>,
+      <code>&lt;div&gt;</code>, and
+      <code>&lt;button&gt;</code>.
+      <br><br>
+      The <code>script</code> tag adds JavaScript code to our website.
+      The code lives in the file <code>script.js</code>, which you can click
+      and view in the left sidebar (go ahead and do so).
+      The code <em>changes</em> our website's HTML code, in real time, in
+      response to a user's action (clicking the button).
+      <br><br>
+      The <code>div</code> tags help organize the HTML content.
+      Here, they distinguish the outside versus the inside of the card.
+      <br><br>
+      The <code>button</code> tags add, well, buttons that you can click.
       </p>
-      <img src="media/recipe1.png" style="width:600px; margin-left:50px">
-      <img src="media/recipe2.png" style="width:285px">
-      <p>
-      When you're done, the webpage should look similar to the below image.
-      </p>
-      <img src="media/recipe3.png" style="width:500px; margin:10px 50px">
+
     <li>
-      <div class="forYouToDo">
-      <p>All the information is there, but it's a bit plain.  Let's spice it
-      up!  Open the <code>style.css</code> file on your repl.it project.
-      Add the code:
+      <p>
+      The card says "Happy Birthday!" twice: once on the outside, and once on
+      the inside.
+      Change one of the messages to say something different.  (Which of your
+      friends has a birthday coming up soon?)
       </p>
-        <pre style='background:lightgray; width:auto; display:inline-block; padding:1em; margin-left:24px;'><code>body {
-  color: lightgreen;
+
+    <li>
+      <p>
+      The card shows a robot on the front.  Try changing it to another image.
+      In the left sidebar, click the "media" folder to see what images you can
+      use.  You can add your own images too.
+      </p>
+
+    <li>
+      <p>
+      The images are kind of small.  Edit the <code>style.css</code> file to
+      make all of the images bigger.  There are many different ways to do so.
+      Here are some examples: adjust the numbers until you get a size that you
+      like.
+      </p>
+      <pre style='background:lightgray; width:auto; display:inline-block; padding:1em; margin-left:24px;'><code>img {
+    width: 1000px;
 }</code></pre>
-      <p>
-      What happened?  Your website browser (Chrome, Safari) looks for all HTML
-      <code>body</code> tags and colored them light green!
-      Notice that HTML and CSS are two different languages, so we're using
-      curly braces { and } instead of brackets &lt; and &gt;.<br><br>
-      Pick and choose pieces of the below CSS code to add more style to your website.
-      You can find some more CSS styling tips and explanations by <a href="https://projects.raspberrypi.org/en/projects/recipe/9">clicking here</a>.
-      </p>
-      </div>
-      <img src="media/recipe4.png" style="width:600px; margin:10px 50px">
+      <pre style='background:lightgray; width:auto; display:inline-block; padding:1em; margin-left:24px;'><code>img {
+    width: 30%;
+}</code></pre>
+      <pre style='background:lightgray; width:auto; display:inline-block; padding:1em; margin-left:24px;'><code>img {
+    width: auto;
+}</code></pre>
+      <pre style='background:lightgray; width:auto; display:inline-block; padding:1em; margin-left:24px;'><code>img {
+    height: 200px;
+}</code></pre>
+
     <li>
-      <p>When you're done, your website might look like the below example.
-      Congratulations, you've made your first website!</p>
-      <img src="media/recipe5.png" style="width:500px; margin:10px 50px">
+      <p>
+      Let's look at the other parts of the CSS style sheet.  Notice the hashtags (<code>#</code> symbol)?
+      The hashtag is an "ID selector".
+      It picks out the HTML tag with a matching <code>id</code> attribute, and applies our requested styles to that tag.
+      Let's give it a try.
+      Change the text color inside the card to make it red, as shown below:
+      </p>
+      <img src="2_card_images/id_color.png" style="height:200px; margin:1em">
+
+    <li>
+      <p>
+      Refresh your webpage and open the card.  What happened?
+      <br><br>
+      Notice: we modified the style for the
+      <code>&lt;div id="inside"&gt;</code> tag, without requesting any style
+      for the <code>&lt;p&gt;</code> tag.
+      We say that the child <code>&lt;p&gt;</code> tags <em>inherited</em> the
+      text color of their parent <code>&lt;div id="inside"&gt;</code> tag.
+      This works for some properties, like <code>color</code> and
+      <code>font-size</code>, but not all others.
+      You can experiment or use Google to figure out what properties can be
+      inherited.
+      </p>
+
+    <li>
+      <p>
+      Let's explore what the other CSS properties do by trial and error.
+      <!-- Have a look at the <code>z-index</code> property. -->
+      The card's outside has <code>z-index: 1</code> and the inside has
+      <code>z-index: 0</code>.
+      Swap the numbers, so the outside z-index is 0 and the inside is 1.
+      Refresh your website and click the button.  What happens?  Then, undo your change.
+      <br><br>
+      Let's also look at the <code>position: absolute</code> property, which is
+      the same for both inside and outside.
+      Change it to <code>position: static</code> (this is the default when no
+      <code>position</code> is specified) for both inside and outside.
+      Refresh your website.  What happens?  Then, undo your change.
+      </p>
+
+    <li>
+      <p>
+      The card is unusual!  It opens by pivoting about the top-left corner.
+      Most greeting/birthday cards open by unfolding on the left side instead.
+      Let's first understand how the card opens, then change it.
+      </p>
+      <img src="2_card_images/pivot.png" style="height:240px; margin:0.5em">
+
+    <li>
+      <p>
+      Look at the <code>script.js</code> file.
+      It defines two functions called <code>open_card()</code> and
+      <code>close_card()</code>, which toggle the outside of the card
+      between two states:
+      <code>&lt;div id="outside"&gt;</code>
+      and <code>&lt;div id="outside" class="open-card"&gt;</code>.
+      We click the button to invoke each of these two functions.
+      <br><br>
+      The <code>class</code> attribute is another way to label our HTML tags,
+      similar to the <code>id</code> attribute.
+      Many different tags can have the same <code>class</code>, whereas in
+      contrast, only one HTML tag can have a given <code>id</code> attribute.
+      (we can't have have two <code>div</code> tags with the same
+      <code>id="outside"</code>).
+      <br><br>
+      Go back to the <code>style.css</code> file.
+      Notice the dot (".") before the <code>.open-card</code> line?
+      This dot is called a <em>CSS class selector</em>.
+      It picks out all the tags with <code>class=open-card</code> and applies
+      the CSS property
+      <code>transform: rotateZ(180deg);</code>
+      to those tags.
+      When we click the button to open the card,
+      (i) the <code>&lt;div id="outside"&gt;</code> tag gets changed to
+      <code>&lt;div id="outside" class="open-card"&gt;</code>,
+      (ii) the transform gets applied,
+      (iii) the outside of the card rotates
+      out of the way, so that we can see the inside of the card.
+      </p>
+      <img src="2_card_images/class_css.png" style="height:400px; margin:1em">
+
+    <li>
+      <p>
+      Now we know how the card opens!  Let's make some changes.
+      Change how the card opens by using <code>rotateX</code> or
+      <code>rotateY</code>, instead of <code>rotateZ</code>.
+      Give it a try.  Which one unfolds the card in the "correct" or
+      "traditional" way?
+      You can also change <code>180deg</code> to something else, maybe
+      <code>45deg</code> or <code>90deg</code>?
+      <br><br>
+      Then, change how fast the card opens: modify <code>transition: 1s;</code>
+      to use <code>10s</code> instead, or maybe <code>0.5s</code>.
+      Test it out and see what happens.
+      <br><br>
+      Visit <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform">https://developer.mozilla.org/en-US/docs/Web/CSS/transform</a> to see even more ways to transform HTML elements.
+      </p>
+      <img src="2_card_images/unfold.png" style="height:200px; margin:0.5em">
+
+    <li>
+      <p>
+      Let's make our card even fancier!
+      Add two new buttons inside the card: one button should flip the presents
+      image upside-down, and the other button should flip it right-side up
+      again.
+      <br><br>
+      You will need to modify all three files: <code>index.html</code>,
+      <code>style.css</code>, and <code>script.js</code> using the following
+      snippets of code.
+      </p>
+      <pre style='background:lightgray; width:auto; display:inline-block; padding:1em; margin-left:24px;'><code>&lt;button onclick="flip()"&gt;Flip!&lt;/button&gt;</code></pre>
+      <pre style='background:lightgray; width:auto; display:inline-block; padding:1em; margin-left:24px;'><code>id="presents"</code></pre>
+      <pre style='background:lightgray; width:auto; display:inline-block; padding:1em; margin-left:24px;'><code>#presents {
+  transition: 5s;
+}</code></pre>
+      <pre style='background:lightgray; width:auto; display:inline-block; padding:1em; margin-left:24px;'><code>&lt;button onclick="unflip()"&gt;Unflip!&lt;/button&gt;</code></pre>
+      <pre style='background:lightgray; width:auto; display:inline-block; padding:1em; margin-left:24px;'><code>.flipped {
+  transform: rotateX(180deg);
+}</code></pre>
+      <pre style='background:lightgray; width:auto; display:inline-block; padding:1em; margin-left:24px;'><code>function flip() {
+  document.getElementById('presents').className = 'flipped';
+}</code></pre>
+      <pre style='background:lightgray; width:auto; display:inline-block; padding:1em; margin-left:24px;'><code>function unflip() {
+  document.getElementById('presents').className = '';
+}</code></pre>
+
+    <li>
+      <p>
+      The final product should look something like this:
+      </p>
+      <img src="2_card_images/flip.png" style="height:200px; margin:0.5em">
+
+    <li>
+      <p>
+      You can go farther make a customized card for a friend or family member!
+      Maybe you could change more colors and fonts?
+      Change the color of the button?
+      Add more text, images, or even embed a YouTube video?
+      </p>
+
   </ol>
 
   <p>Credits: this lesson was adapted from
   <a href="https://docs.replit.com/teaching-curriculum/intro-html-css">Toni Scullion's lesson plan</a>,
   in turn adapted from a
-  <a href="https://projects.raspberrypi.org/en/projects/recipe/">Raspberry Pi Foundation project</a>.
+  <a href="https://projects.raspberrypi.org/en/projects/happy-birthday/">Raspberry Pi Foundation project</a>.
   </p>
 
   </div>
