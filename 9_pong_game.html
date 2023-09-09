@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Pong Game</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <nav class="lesson">
+    <button onclick="window.location.href='8_guessing_game.html';">Previous Lesson</button>
+    <button onclick="window.location.href='index.html';">Home Page</button>
+    <button disabled>Next Lesson</button>
+  </nav>
+
+  <div id="main">
+    <h1>The Game of Pong</h1>
+
+    <p>You are going to model a game called Pong, developed by Atari in 1972.
+    You will write code to move the paddle up and down and to make the ball
+    bounce when it hits a wall or the paddle.</p>
+
+    <img src="9_pong_game_images/demo.gif" style="width:300px; margin-left:auto; margin-right:auto; display:block">
+
+    <!-- begin main lesson sequence -->
+    
+    <ol id="lesson">
+
+      <li>
+        <p>
+          <a href="https://snap.berkeley.edu/snap/snap.html#present:Username=dphhscodingclub&ProjectName=Pong_Starter_sp2022&editMode&noRun"
+            target=”_blank”>Click here</a> to load a starter project.
+          <br><br>
+          You should see the paddle sprite's code.  If not, click "Paddle" in the bottom right.
+        </p>
+        <img src="9_pong_game_images/paddle_sprite.png" style="height:300px; margin-left:50px">
+
+      <li>
+        <p>
+        <strong>Write the code for the paddle first.</strong>
+        The paddle should be allowed to move only up and down near the right
+        edge of the screen. When the user presses the up/down arrow keys on the
+        keyboard, the paddle should move up or down a certain amount but it
+        should never wander off the edges of the screen.
+        <br><br>
+        <strong>You may find the following blocks useful.</strong>
+        </p>
+        <img src="9_pong_game_images/paddle_code.png" style="height:250px; margin-left:50px">
+
+      <li>
+        <p>
+        <strong>Now, write code for the ball.</strong>
+        At the start of the game, place the ball in the middle of the screen,
+        give it a random direction, and make it move. Then check if the ball is
+        at the edge of the screen or is touching the paddle. In each case the
+        ball needs to bounce.
+        <br><br>
+        <strong>You may find the following blocks useful.</strong>
+        See also, just below, some diagrams for coding the ball bounce.
+        </p>
+        <img src="9_pong_game_images/ball_code.png" style="height:300px; margin-left:50px">
+
+      <li>
+        <p>
+        Below are two possibly-useful diagrams for coding the ball bounce.
+        <br><br>
+        In Snap!, positive angles are measured clockwise from the up (0&deg;)
+        direction.
+        Negative angles are measured counterclockwise from the up (0&deg;)
+        direction.
+        </p>
+        <img src="9_pong_game_images/bounce.png" style="height:300px; margin-left:50px; margin-top:10px; padding:0.5em; border: 1px solid black">
+        <img src="9_pong_game_images/angles.png" style="height:200px; margin-left:50px; margin-top:10px; vertical-align:top; padding:0.5em; border: 1px solid black">
+
+      <li>
+        <p>
+        <strong>(optional) Add scoring to your game.</strong>
+        Every time the ball bounces off the paddle, the player should earn a
+        point. Every time the ball hits the right wall, the player should lose
+        a point. You can create a variable to keep track of the score.
+        </p>
+        <img src="9_pong_game_images/scoring.png" style="height:250px; margin-left:50px">
+
+      <li>
+        <p>
+        <strong>(optional) Add a second paddle to make a multiplayer game.</strong>
+        Change your code to handle keyboard input from two users. To clone a
+        sprite, <em>right-click</em> to open a menu, then click "duplicate".
+        <br><br>
+        <em>Right-click on Chromebooks and Macs: press or tap the touchpad with two fingers.
+        Chromebooks: you can also press Alt, then click with one finger.
+        Macs: you can also press Control (not Command!), then click with one finger.</em>
+        </p>
+        <img src="9_pong_game_images/paddle2.png" style="height:250px; margin-left:50px">
+        <img src="9_pong_game_images/two_player.png" style="height:250px; margin-left:50px">
+
+      <li>
+        <p>
+        <strong>(optional) Drive the second paddle automatically for a "human versus computer" game.</strong>
+        You may find the following block (in the "Sensing" menu) useful.
+        </p>
+        <img src="9_pong_game_images/y-position.png" style="height:30px; margin-left:50px">
+
+    </ol>
+   
+    <!-- end main lesson sequence -->
+
+    <h2>Credits</h2>
+    
+    <p>
+    Content adapted directly from
+    <a href="https://bjc.edc.org/bjc-r/cur/programming/1-introduction/optional-projects/3-pong.html" target="_blank">BJC U1 Optional Projects</a>
+    and
+    <a href="https://bjc.edc.org/bjc-r/cur/programming/1-introduction/optional-projects/3b-pong-hints.html" target="_blank">corresponding hints</a>.
+    </p>
+
+  </div>
+
+  <nav class="lesson">
+    <button onclick="window.location.href='8_guessing_game.html';">Previous Lesson</button>
+    <button onclick="window.location.href='index.html';">Home Page</button>
+    <button disabled>Next Lesson</button>
+  </nav>
+
+</body>
+
+</html>
