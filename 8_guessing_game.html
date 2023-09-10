@@ -34,7 +34,7 @@
 
       <li>
         <div class="forYouToDo">
-          Create two new variables: <code class="variables">secret number</code> and <code class="variables">guess</code>.
+          Create a new variable called <code class="variables">secret number</code>.
           <br><br>
           If you have not yet done the last project, Keeping Score, then you can follow the instructions below to create new variables.
         </div>
@@ -47,10 +47,13 @@
           For example, the following block will cause the sprite to say "Guess what my number is!" and wait for a response.
         </div>
         <img src="8_guessing_game_images/guess-number.png" style="margin-left:50px">
-        <p>And you can access the response by dragging the oval-shaped <img src="8_guessing_game_images/answer.png" style="height:20px; vertical-align:middle;"> block from the left-side bar under the "Sensing" palette:</p>
+        <p>
+          And you can access the response by dragging the oval-shaped <img src="8_guessing_game_images/answer.png" style="height:20px; vertical-align:middle;"> block from the left-side bar under the "Sensing" palette:
+        </p>
         <img src="8_guessing_game_images/drag-answer.png" style="margin-left:50px">
-        <p>Set <code class="variables">secret number</code> to a random number (perhaps between 1 and 10) and ask the player to guess what it is. After the player answers, set <code class="variables">guess</code> equal to their <img src="8_guessing_game_images/answer.png" style="height:20px; vertical-align:middle;"> and check whether the two numbers match. Afterwards, have the </p>
-
+        <p>
+          Using the <img src="8_guessing_game_images/random.png" style="height:20px; vertical-align:middle;"> block, set <code class="variables">secret number</code> to a random number (perhaps between 1 and 10) and <code class="sensing">ask</code> the player to guess what it is. After the player answers, check whether their <img src="8_guessing_game_images/answer.png" style="height:20px; vertical-align:middle;"> matches the <code class="variables">secret number</code> or not. Finally, give the player feedback: <code class="control">if</code> the two numbers match, then the sprite should <code class="looks">say</code> something like "congratulations!", otherwise it should <code class="looks">say</code> something <code class="control">else</code>
+        </p>
       <li>
         <div class="forYouToDo">
           Hmmm, this guessing game is a bit too easy since our <code class="variables">secret number</code> is visible in the top left corner of the stage. If only there was a way to make the <code class="variables">secret number</code> actually secret!
@@ -67,12 +70,39 @@
         <p>You can create multiple variables from the same <strong>script variable</strong> block by clicking the black arrow to the right of your variable name.</p>
 
       <li>
-        <p>Using the <img src="8_guessing_game_images/repeat-until.png" style="height:50px; vertical-align:middle;"> block that you used in the Row of Houses project, continue asking </p>
+        <p>
+          Delete your variable <code class="variables">secret number</code>.
+        </p>
+        <img src="8_guessing_game_images/delete-var.png" style="margin-left:50px">
+        <p>
+          Now add a <strong>script variable</strong> block to your code that creates a local variable called <code class="variables">secret number</code> that will be truly secret!
+        </p>
+      
+      <li>
+        <p>
+          Using the <img src="8_guessing_game_images/repeat-until.png" style="height:50px; vertical-align:middle;"> block that you used in the Row of Houses project, <code class="control">repeat</code> <code class="sensing">asking</code> the player to guess the <code class="variables">secret number</code> <code class="control">until</code> they successfully guess it. When the player finally succeeds, then you can congratulate them.
+        </p>
+
+      <li>
+        <p>
+          The game is a little too hard, since the only feedback the player gets is whether or not they player guessed the right number. Edit your code so that after the player makes a wrong guess, tell them if their guess is too big or too small.
+        </p>
 
       <li>
         <div class="forYouToDo">
-          You can personalize this project just like with the Sprite Chase project, by changing the sprite costumes and the backgrounds and having the sprites talk to each other.
+          You can personalize this project just like with the Sprite Chase project, by changing the sprite costumes and the backgrounds.
         </div>
+
+      <li>
+        <div class="forYouToDo">
+          (Optional) Let's give the player a sprite and have the two sprites talk to each other! Create a new sprite by clicking <img src="8_guessing_game_images/new-sprite.png" style="height:30px; vertical-align:middle;"> and personalize the sprite.
+          <br><br>
+          In the Sprite Chase project, you used the <code class="control">tell</code> block to control the second sprite so they could have a conversation. Snap! gives us another powerful tool for having sprites interact with eachother: the <code class="control">broadcast</code> and <code class="control">when_I_receive</code> blocks. Consider the code below:
+        </div>
+        <img src="8_guessing_game_images/broadcast-receive.png" style="width:700px; margin-left:50px">
+        <p>
+          Using these blocks, have your two sprites take turns making secret numbers and asking each other to guess them.
+        </p>
 
     </ol>
    
