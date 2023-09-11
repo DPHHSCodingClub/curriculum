@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Make a Wanted Poster (HTML/CSS)</title>
+  <link href="../style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <nav class="lesson">
+    <button onclick="window.location.href='2_story.html';">Previous Lesson</button>
+    <button onclick="window.location.href='../index.html';">Home Page</button>
+    <button disabled>Next Lesson</button>
+  </nav>
+
+  <div id="main">
+
+  <h1>Make a Wanted Poster (CSS properties)</h1>
+
+  <p>This project introduces more CSS properties (text decoration, borders,
+  margins, padding) that you can use to customize the
+  </p>
+
+  <div style="padding:0.5em 1em; background-color:tomato; width:fit-content; border-radius:10px; border:2px solid thistle">
+  <!--<marquee style="width:10%">-->
+  <code style="font-style:italic; font-size:x-large; color:#ffffff; text-shadow: 3px 3px #333333">a&nbsp;e&nbsp;s&nbsp;t&nbsp;h&nbsp;e&nbsp;t&nbsp;i&nbsp;c</code>
+  <!--</marquee>-->
+  </div>
+
+  <p>
+  of your website!  We'll use these CSS properties to create a "Wanted!"
+  poster, like this one below for John Wilkes Booth and his conspirators.
+  </p>
+
+  <img src="4_poster_images/booth.jpg" style="display:block; margin-left:auto; margin-right:auto; width:350px">
+
+  <ol id="lesson">
+
+    <li>
+      <p>
+      Visit <a href="https://bit.ly/MakeAWantedPoster">bit.ly/MakeAWantedPoster</a>
+      to open a starter project.
+      Click the "Fork" button to make your own copy.
+      <br><br>
+      <strong>Note:</strong> the web preview next to the code editor
+      may not work correctly.  But the website will appear correctly at:
+      <a href="https://task-4-wantedposter--toniscullion1.repl.co/">https://task-4-wantedposter--toniscullion1.repl.co</a>
+      (except, use your project name and your Replit username in the URL).
+      </p>
+
+    <li>
+      <p>
+      Open the <code>style.css</code> file.
+      There are already some CSS properties set for the
+      <code>&lt;div&gt;</code>
+      containing the different parts of the poster.
+      </p>
+      <img src="4_poster_images/css-starter.png" style="margin-left:50px">
+
+    <li>
+      <div class="forYouToDo">
+      Start by altering the property:
+      <code><pre>    text-align:&nbsp;center;</pre></code>
+      Try changing the word <code>center</code> to
+      <code>left</code> or <code>right</code>.
+      Be sure to preserve the semicolon at the end of the line.
+      </div>
+
+    <li>
+      <div class="forYouToDo">
+      How about the <code>border</code> property?
+      In the code, <code>2px</code> means 2 pixels.
+      What happens when you change <code>2px&nbsp;solid&nbsp;black</code>
+      to <code>4px&nbsp;dotted&nbsp;red</code>?
+      Here are some different options that you can use for the border style:
+      <code><pre>    dashed
+    dotted
+    double
+    groove
+    inset
+    outset
+    ridge
+    solid
+</pre></code>
+      </div>
+
+    <li>
+      <p>
+      Change the <code>width</code> to <code>400px</code>.  How do you like the
+      look?  Adjust the width until you're happy with the size.
+      </p>
+
+    <li>
+      <div class="forYouToDo">
+      Let's add a new CSS property to set the poster's background color.
+      Inside the div selector, add a new line:
+      <code><pre>    background:&nbsp;yellow;</pre></code>
+      Make sure you type the code exactly as it is above (with both colon and
+      semicolon, all on its own line before the closing curly brace).
+      The poster should change color!
+      <br><br>
+      You may need to visit the actual website
+      <a href="https://task-4-wantedposter--toniscullion1.repl.co/">https://task-4-wantedposter--toniscullion1.repl.co</a>
+      (but with your project name and Replit username),
+      if the live preview appears to be broken.
+      </div>
+      <img src="4_poster_images/css-bkg.png" style="margin-left:50px; vertical-align:top;">
+      <img src="4_poster_images/poster-bkg.png" style="margin-left:1em; width:200px; vertical-align:top;">
+
+    <li>
+      <div class="forYouToDo">
+      Add the following CSS property to your <code>div</code> selector:
+      <code><pre>    border-radius:&nbsp;40px;</pre></code>
+      What does this property do?  What happens if you change the number in
+      the code above?
+      </div>
+
+    <li>
+      <div class="forYouToDo">
+      Let's now customize the styling for <em>just</em> the image, separate
+      from the rest of the poster.
+      Add the following code underneath <code>div</code> selector's CSS.
+      <code><pre>    img {
+      width: 100px;
+      border: 1px solid black;
+    }</pre></code>
+      Then take a look at your poster.  You should see that the robot gets a
+      bit smaller, and a tight border appears around the robot.
+      </div>
+      <img src="4_poster_images/robot-border.png" style="margin-left:50px">
+
+    <li>
+      <div class="forYouToDo">
+      The robot looks kind of cramped!  We can fix this by adding some padding
+      around the image.  Add the following CSS property
+      <code><pre>    padding: 10px;</pre></code>
+      to the <code>img</code> tag's CSS selector.
+      Also, try changing the padding to <code>50px</code> to see what happens.
+      </div>
+      <img src="4_poster_images/robot-padding.png" style="margin-left:50px">
+
+    <li>
+      <div class="forYouToDo">
+      The "Wanted!" heading could use some more energy!  Let's add some style
+      to the <code>&lt;h1&gt;</code> tag.
+      Add the following code:
+      <code><pre>    h1 {
+      font-family: Impact;
+      font-size: 50pt;
+    }</pre></code>
+      </div>
+      <img src="4_poster_images/h1-margin.png" style="margin-left:50px">
+
+    <li>
+      <div class="forYouToDo">
+      There's a lot of space between the heading and the stuff around it.
+      That space is called a <em>margin</em>.
+      We can make the margin smaller using this CSS property:
+      <code><pre>    margin: 10px;</pre></code>
+      Test it out.
+      </div>
+      <img src="4_poster_images/h1-margin-10px.png" style="margin-left:50px">
+
+    <li>
+      <div class="forYouToDo">
+      You can also underline your heading:
+      <code><pre>    text-decoration: underline;</pre></code>
+      Here are some example options that you can use for text decoration:
+      <code><pre>    underline
+    overline
+    wavy underline
+    double underline
+    dotted underline
+    dashed underline
+    underline overline
+</pre></code>
+      Try them out and see what you like.
+      </div>
+
+    <li>
+      <div class="forYouToDo">
+      <p>
+      Can you make your poster more awesome?  You could . . . 
+      </p>
+      <ul>
+        <li>Add some style to the <code>&lt;h3&gt;</code> or
+          <code>&lt;p&gt;</code> tags, to further customize the poster.
+        <li>Customize the text and image to make a "Wanted!" poster for a
+          celebrity or friend, or perhaps re-create a historic poster.
+        <li>Instead of a "Wanted!" poster, you could make an advertisement for
+          an event at Democracy Prep that you are involved in.
+      </ul>
+      <p>
+      Below is a list of some CSS properties that you can use:
+      </p>
+      </div>
+      <img src="4_poster_images/css-summary.png" style="margin-left:50px">
+
+  </ol>
+
+  <p>Credits: this lesson was adapted from both
+  <a href="https://docs.replit.com/teaching-curriculum/intro-html-css">Toni Scullion's lesson plan</a>
+  and the corresponding
+  <a href="https://projects.raspberrypi.org/en/projects/wanted">Raspberry Pi Foundation project</a>.
+  </p>
+
+  </div>
+
+  <nav class="lesson">
+    <button onclick="window.location.href='2_story.html';">Previous Lesson</button>
+    <button onclick="window.location.href='../index.html';">Home Page</button>
+    <button disabled>Next Lesson</button>
+  </nav>
+
+</body>
+
+</html>
