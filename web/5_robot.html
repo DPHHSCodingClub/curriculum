@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Make a Robot (HTML/CSS)</title>
+  <link href="../style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <nav class="lesson">
+    <button onclick="window.location.href='4_poster.html';">Previous Lesson</button>
+    <button onclick="window.location.href='../index.html';">Home Page</button>
+    <button disabled>Next Lesson</button>
+  </nav>
+
+  <div id="main">
+
+  <h1>Make a Robot (CSS positioning, id selectors)</h1>
+
+  <p>In this project, you'll learn how to position images on a website and
+  design your own robot!
+  </p>
+
+  <ol id="lesson">
+
+    <li>
+      <p>
+      Visit <a href="https://bit.ly/MakeaRobot">bit.ly/MakeaRobot</a>
+      to open a starter project.
+      Click the "Fork" button to make your own copy.
+      <br><br>
+      Open the <code>index.html</code> file and take a look.
+      Each image tag <code>&lt;img&gt;</code> has its own <code>id</code>.
+      You can use an image's <code>id</code> to give it its own style, using
+      the <code>#</code> symbol in your CSS file.
+      </p>
+      <img src="5_robot_images/starter.png" style="margin-left:50px">
+
+    <li>
+      <div class="forYouToDo">
+      Open the <code>style.css</code> file.
+      Add the following CSS code to adjust the robot's eyes.
+      <code><pre>    #eyes1 {
+      width: 200px;
+    }</pre></code>
+      Save your file, then refresh the webpage.
+      What happens?
+      Notice that you're styling only the <code>eyes1</code> image by using
+      <code>#eyes1</code> in your CSS code.
+      If you prefer different eyes, you can use <code>#eyes2</code> or
+      <code>#eyes3</code> instead.
+      </div>
+      <img src="5_robot_images/eyes1.png" style="margin-left:50px; width:400px">
+
+    <li>
+      <div class="forYouToDo">
+      Notice how each image is displayed one after the other? This is called
+      <strong>relative</strong> positioning. If you want to tell the web
+      browser exactly where to place your robot’s eyes, you’ll need to use
+      <strong>absolute</strong> positioning instead.
+      <br><br>
+      Add the following CSS code to adjust the <code>eyes1</code> image:
+      <code><pre>    position: absolute;
+    top: 200px;
+    left: 100px;</pre></code>
+      The eyes should move to the correct place on the robot's face.
+      </div>
+      <img src="5_robot_images/eyes1-position.png" style="margin-left:50px; width:400px">
+
+    <li>
+      <p>
+      The CSS position is measured from the top-left corner of the webpage.
+      You can use <code>bottom</code> instead of <code>top</code> to tell the
+      browser how far from the bottom of the screen to show the image, as well
+      as <code>right</code> instead of <code>left</code>.
+      </p>
+      <img src="5_robot_images/eyes1-position-explainer.png" style="margin-left:50px; width:300px">
+
+    <li>
+      <div class="forYouToDo">
+      Let's give your robot a mouth!
+      Add the following CSS code to the <code>style.css</code> file.
+      <code><pre>    #mouth1 {
+      width: 50px;
+      position: absolute;
+      top: 200px;
+      left: 200px;
+    }</pre></code>
+      Hmmm... that's not quite right.  The mouth istoo small and not in the
+      right place!  Can you fix it?
+      </div>
+      <img src="5_robot_images/mouth1.png" style="margin-left:50px; width:200px">
+
+    <li>
+      <p>
+      Use what you’ve learned to finish designing your own robot. Here are
+      some examples of how your robot might look.
+      </p>
+      <img src="5_robot_images/examples.png" style="margin-left:50px; width:300px">
+
+  </ol>
+
+  <p>Credits: this lesson was adapted from both
+  <a href="https://docs.replit.com/teaching-curriculum/intro-html-css">Toni Scullion's lesson plan</a>
+  and the corresponding
+  <a href="https://projects.raspberrypi.org/en/projects/build-a-robot/">Raspberry Pi Foundation project</a>.
+  </p>
+
+  </div>
+
+  <nav class="lesson">
+    <button onclick="window.location.href='4_poster.html';">Previous Lesson</button>
+    <button onclick="window.location.href='../index.html';">Home Page</button>
+    <button disabled>Next Lesson</button>
+  </nav>
+
+</body>
+
+</html>
