@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Debug It! (HTML/CSS)</title>
+  <link href="../style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <nav class="lesson">
+    <button onclick="window.location.href='5_robot.html';">Previous Lesson</button>
+    <button onclick="window.location.href='../index.html';">Home Page</button>
+    <button disabled>Next Lesson</button>
+  </nav>
+
+  <div id="main">
+
+  <h1>Debug It!</h1>
+
+  <p>Instead of making your own project, you will fix some projects that have
+  some coding errors, which are called <em>bugs</em>.
+  The process of finding and fixing these errors is called <em>debugging</em>.
+  Can you find and squash all the bugs?
+  </p>
+
+  <ol id="lesson">
+
+    <li>
+      <p>
+      <span style="font-weight:bold; color:#cd7f32">Bronze-level debugging.</span>
+      Visit <a href="https://replit.com/@atr6/Debug-Task-1" target="_blank">replit.com/@atr6/Debug-Task-1</a>
+      and click the "Fork" button to make your own copy.
+      <br><br>
+      This website has four (4) errors in the HTML file.  The CSS file does not
+      have any errors.
+      Once you've found and fixed the bugs, the website should look like the
+      below image:
+      </p>
+      <img src="6_debug_images/styleGuideBronze.png" style="margin-left:50px">
+
+    <li>
+      <p>
+      <span style="font-weight:bold; color:#808080">Silver-level debugging.</span>
+      Visit <a href="https://replit.com/@atr6/Debug-Task-2" target="_blank">replit.com/@atr6/Debug-Task-2</a>
+      and click the "Fork" button to make your own copy.
+      <br><br>
+      This website has nine (9) errors total: five (5) in the HTML file and
+      four (4) in the CSS file.
+      Once you've found and fixed the bugs, the website should look like the
+      below image:
+      </p>
+      <!-- expanded slightly from native width -->
+      <img src="6_debug_images/styleGuideSilver.png" style="margin-left:50px; width:450px">
+
+
+    <li>
+      <p>
+      <span style="font-weight:bold; color:#ddb700">Gold-level debugging.</span>
+      Visit <a href="https://replit.com/@atr6/Debug-Task-3" target="_blank">replit.com/@atr6/Debug-Task-3</a>
+      and click the "Fork" button to make your own copy.
+      <br><br>
+      This website has fifteen (15) errors total: eight (8) in the HTML file and
+      seven (7) in the CSS file.
+      Once you've found and fixed the bugs, the website should look like the
+      below image.
+      <br><br>
+      There's one tag, <code>&lt;a&gt;</code>, that you may not have seen
+      before.  It's called the anchor tag and is used to link to other web
+      pages.  To learn more, try Googling "HTML anchor tag".
+      </p>
+      <!-- shrunk slightly from native width -->
+      <img src="6_debug_images/styleGuideGold.png" style="margin-left:50px; width:500px">
+      <!--
+        NOTE: Removed div tag from toni scullion's version and xferred
+        formatting over to body tag, which works better with replit's embedded
+        web preview.
+        HTML
+          error 1: style.css
+          error 2: missing close p at end
+          error 3: extraneous closing header tag
+          error 4: close HTML wrong
+          error 5: p identification="..." -> p id="..."
+          error 6: NEED TO CHANGE h to h1 (this is erroneous in scullion's version)
+          error 7: CHANGE para to h2 and add close tag...
+          error 8: ANCHOR TAG messed up, need HREF
+        CSS
+          error 1: p font-face should be font-family
+          error 2: birthday, birthplace selectors need hashtags #
+          error 3: starsign is missing close brace
+          error 4: firstsingle should be left not right.
+          error 5: musicvideo, text-position should be text-align
+          error 6: image should be 350px not 2.5px
+          error 7: remove period from before .h2
+      -->
+
+  </ol>
+
+  <p>Credits: this lesson was adapted from
+  <a href="https://docs.replit.com/teaching-curriculum/intro-html-css">Toni Scullion's lesson plan</a>.
+  </p>
+
+  </div>
+
+  <nav class="lesson">
+    <button onclick="window.location.href='5_robot.html';">Previous Lesson</button>
+    <button onclick="window.location.href='../index.html';">Home Page</button>
+    <button disabled>Next Lesson</button>
+  </nav>
+
+</body>
+
+</html>
