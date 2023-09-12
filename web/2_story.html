@@ -53,7 +53,7 @@
         </p>
         <img src="2_story_images/editor-view.png" style="height:200px; margin-left:50px">
         <p>
-        But, when you save your work and open a new browser tab with the link
+        But, when you save your work and open a new browser tab by pressing the <img src="2_story_images/open-new-tab.png" style="height:20px; vertical-align:middle;"> button on the top right of the page or by copying and pasting the link
         <a href="https://tellastory.atr6.repl.co/" target="_blank">https://tellastory.atr6.repl.co/</a>
         (with your username and your project name instead), you should see
         something like this:
@@ -62,11 +62,13 @@
       </div>
 
     <li>
-      <p>
+      <div class="forYouToDo">
       Each panel in the story is marked by the <code>&lt;div&gt;</code> tag,
       which represents a <em>division</em> of your content.
+      Notice how we are putting other HTML elements, such as an image tag and a paragraph tag, inside each <code>&lt;div&gt;</code>. We often use <code>&lt;div&gt;</code> tags to divide our webpage into multiple chunks, and the <code>&lt;div&gt;</code> tag acts as a container for each chunk.
+      <br><br>
       Add more panels to your story by making some more div tag groups!
-      </p>
+      </div>
       <img src="2_story_images/div.png" style="height:100px; margin-left:50px">
 
     <li>
@@ -77,6 +79,70 @@
       "Upload file".
       </p>
       <img src="2_story_images/media.png" style="height:250px; margin-left:50px">
+
+    <li>
+      <div class="forYouToDo">
+        Your story looks great! However, it might not be arranged exactly how you want it to be. At the moment, notice how all of the story panels are just placed left-to-right on a single row until it runs out of space and then overflows to the next row. For example, try changing the width of your browser page (you might have to exit out of full-screen mode) and see how your story panels rearrange themselves.
+        <br><br>
+        In the next section, we'll show you a more advanced way of dividing your story using different classes of <code>&lt;div&gt;</code> tags. First, change the CSS file in the <code>&lt;head&gt;</code> of <code>index.html</code> from <code>"style.css"</code> to <code>"better_style.css"</code>. Next, change all your <code>&lt;div&gt;</code> opening tags to say <code>&lt;div class="panel"&gt;</code>.
+        <br><br>
+        It should look like this:
+        <br>
+        <pre style='background:lightgray; width:auto; display:inline-block; padding:1em; margin-left:24px;'><code>&lt;html&gt;
+
+&lt;head&gt;
+  &lt;link rel="stylesheet" href="better_style.css"&gt;
+&lt;/head&gt;
+          
+&lt;body&gt;
+
+  &lt;h1&gt;My Story&lt;/h1&gt;
+
+  &lt;div class="panel"&gt;
+    &lt;img src="..."&gt;
+    &lt;p&gt;...&lt;/p&gt;
+  &lt;/div&gt;
+  ...
+
+&lt;/body&gt;
+
+&lt;/html&gt;</code></pre>
+      </div>
+
+    <li>
+      <div class="forYouToDo">
+        Let's look at <code>better_style.css</code>. Notice how there are now two separate classes of <code>&lt;div&gt;</code> tags: <code>row</code> and <code>panel</code>
+        <br>
+        <pre style='background:lightgray; width:auto; display:inline-block; padding:1em; margin-left:24px;'><code>div.row {
+  ...
+}
+div.panel {
+  ...
+}
+        </code></pre>
+        <br>
+        In your HTML, you can specify whether you want your <code>&lt;div&gt;</code> to be a <code>row</code> or a <code>panel</code> by specifying <code>&lt;div class="row"&gt;</code> or <code>&lt;div class="panel"&gt;</code>.
+        <br><br>
+        Arrange your story by putting <code>panels</code> inside <code>rows</code> like this:
+        <br>
+        <pre style='background:lightgray; width:auto; display:inline-block; padding:1em; margin-left:24px;'><code>&lt;div class="row"&gt;
+  &lt;div class="panel"&gt;
+    &lt;img src="..."&gt;
+    &lt;p&gt;...&lt;/p&gt;
+  &lt;/div&gt;
+
+  &lt;div class="panel"&gt;
+    &lt;img src="..."&gt;
+    &lt;p&gt;...&lt;/p&gt;
+  &lt;/div&gt;
+  ...
+&lt;/div class="row"&gt;
+
+&lt;div class="row"&gt;
+  ...
+&lt;/div class="row"&gt;
+      </code></pre>
+      </div>
 
     <li>
       <p>
